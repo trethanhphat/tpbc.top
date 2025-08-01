@@ -1,4 +1,5 @@
 {
+  "__comment": "File: package.json của Dự án redirect QR code tpbc.top -> trethanhphat.com",
   "name": "tpbctop-redirect",
   "type": "module",
   "scripts": {

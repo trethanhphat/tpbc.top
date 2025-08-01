@@ -1,10 +1,5 @@
-name = "qr-redirect-worker"
-type = "javascript"  # hoặc "webpack" nếu dùng bundler cũ
-account_id = "YOUR_CLOUDFLARE_ACCOUNT_ID"
-workers_dev = false
-
-routes = [
-  "https://tpbc.top/*"
-]
-
+# File: wrangler.toml
+# Đây là worker redirect QR tpbc.top sang trethanhphat.com
+name = "tpbctop-redirect"
+type = "javascript"
 compatibility_date = "2025-08-01"
