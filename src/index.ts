@@ -6,7 +6,7 @@ export default {
     const t = url.searchParams.get("t");
     const b = url.searchParams.get("b");
 
-    let redirectUrl = "https://trethanhphat.com";
+    let redirectUrl = "https://app.trethanhphat.vn";
 
     if (t) {
       redirectUrl += `/?t=${t}`;
