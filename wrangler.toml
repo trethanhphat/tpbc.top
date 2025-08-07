@@ -2,4 +2,8 @@
 # Đây là worker redirect QR tpbc.top sang trethanhphat.com
 name = "tpbctop-redirect"
 type = "javascript"
+main = "src/index.ts"
 compatibility_date = "2025-08-01"
+
+[triggers]
+routes = ["tpbc.top/*"]
