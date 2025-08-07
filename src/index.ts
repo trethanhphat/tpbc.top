@@ -9,9 +9,9 @@ export default {
     let redirectUrl = "https://app.trethanhphat.vn";
 
     if (t) {
-      redirectUrl += `/?t=${t}`;
+      redirectUrl += `/tree/${t}`;
     } else if (b) {
-      redirectUrl += `/?b=${b}`;
+      redirectUrl += `/batch/${b}`;
     }
 
     return Response.redirect(redirectUrl, 301);
