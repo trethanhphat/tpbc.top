@@ -3,15 +3,17 @@
 export default {
   async fetch(request: Request): Promise<Response> {
     const url = new URL(request.url);
-    const targetParam = url.searchParams.get("t");
+    const t = url.searchParams.get("t");
+    const b = url.searchParams.get("b");
 
-    if (targetParam) {
-      return Response.redirect(
-        `https://trethanhphat.com/?t=${targetParam}`,
-        301
-      );
+    let redirectUrl = "https://trethanhphat.com";
+
+    if (t) {
+      redirectUrl += `/?t=${t}`;
+    } else if (b) {
+      redirectUrl += `/?b=${b}`;
     }
 
-    return Response.redirect("https://trethanhphat.com", 302);
+    return Response.redirect(redirectUrl, 301);
   },
 };
